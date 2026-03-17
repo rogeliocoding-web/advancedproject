@@ -84,6 +84,35 @@
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me</h3>
+          <h4 class="modal__sub-title modal__sub-title--about"></h4>
+          <p class="modal__para">
+            I'm a 21 year-old Australian frontend software engineer with
+            experience developing websites for top-tech companies like Google
+            and Canva.
+            <br />
+            I currently solve extremely difficult engineering problems every day
+            with React, TypeScript and MobX in Canva's Video team.
+          </p>
+        </div>
+        <div class="modal__languages">
+            <figure>
+                <img src="./assets/html5-brands-solid-full.svg" alt="">
+
+            </figure>
+            <figure>
+                <img src="./assets/css3-alt-brands-solid-full.svg" alt="">
+
+            </figure>
+            <figure>
+                <img src="./assets/js-brands-solid-full.svg" alt="">
+            </figure>
+        </div>
+
+      </div>
     </section>
     <section id="projects">
       <div class="container">
@@ -95,7 +124,7 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/blinker mockup.png"
+                  src="./assets/blog-image-1-940x460.jpg"
                   class="project__img"
                   alt=""
                 />
@@ -115,11 +144,48 @@
                   </p>
                   <div class="project__description--links">
                     <a href="#" class="project__description--link">
-                         <i class="fa-brands fa-github"></i>
+                      <i class="fa-brands fa-github"></i>
                     </a>
                     <a href="#" class="project__description--link">
-                         <i class="fa-solid fa-link"></i>
-
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/google mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Google In-Store</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Google In-Store is a platform allowing Google retail
+                    employees to report any issues with their store products.
+                    Once an issue is reported, it is posted to an API which
+                    populates a separate platform's frontend - which is used by
+                    Google's vendors to fix the issue as soon as possible. I was
+                    the sole front-end developer of this application.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fa-solid fa-link"></i>
                     </a>
                   </div>
                 </div>
@@ -129,5 +195,42 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img class="footer__logo--img" src="./assets/logo.svg" alt="" />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Github
+            </a>
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Linkedin
+            </a>
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">Copyright © 2023</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
