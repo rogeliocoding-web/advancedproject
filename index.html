@@ -16,7 +16,7 @@
 <script type="text/javascript">
    (function() {
       emailjs.init({
-        publicKey: "user_aFORv6KVYrWVfRyD3"
+        publicKey: "aFORv6KVYrWVfRyD3"
       });
    })();
 </script>
@@ -42,7 +42,7 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -52,7 +52,9 @@
           <li class="nav__link click">
             <a
               href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              class="nav__link--anchor 
+              link__hover-effect 
+              link__hover-effect--black"
               ><i class="fa-solid fa-circle-half-stroke"></i
             ></a>
           </li>
@@ -66,7 +68,7 @@
             I'm a <b class="orange"> Software Engineer</b> with a strong passion
             for building web applications with great user experiences.
             <br />
-            Here's more <b class="orange">about me.</b>
+            Here's more <b class="orange click" onclick="toggleModal()">about me.</b>
           </p>
           <div class="social__list">
             <a
@@ -89,7 +91,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -140,12 +142,13 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
 
           <h4 class="modal__sub-title modal__sub-title--contact">
             I'm currently open to new opportunities.
           </h4>
-          <form id="contact__form" onsubmit="contac(event)">  
+          <form id="contact__form" onsubmit="contact(event)">  
             <div class="form__item">
               <label class="form__label">Name</label>
               <input class="input" name="user__name" type="text"  />
@@ -156,7 +159,7 @@
             </div>
             <div class="form__item">
               <label class="form__label">Message</label>
-              <textarea class="input" name="message" ></textarea>
+              <textarea class="input" name="message"  ></textarea>
             </div>
             <button id="contact__submit" class="form__submit">
               Send it my way
@@ -169,7 +172,7 @@
             Thank you for your message! Looking forward to connecting with you.
           </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
+       
       </div>
     </section>
     <section id="projects">
