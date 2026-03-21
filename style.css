@@ -149,7 +149,22 @@ nav, .scroll, header {
 
 }
 
-/* 
+.dark-theme .title,
+.dark-theme .section__title
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-adjust,
+.dark-theme .header__para {
+    color: white;
+}
+
+.dark-theme section {
+    background-color: #242424;
+}
+
+
+
+/*
 
 LANDING PAGE 
 
