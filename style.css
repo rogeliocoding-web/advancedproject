@@ -656,7 +656,7 @@ SHAPES
 */
 
 .shape {
-    position: absolute;
+    position: fixed;
 }
 
 .shape--0 {
