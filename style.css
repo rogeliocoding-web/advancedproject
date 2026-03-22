@@ -194,7 +194,7 @@ LANDING PAGE
 */
 
 #landing-page {
-    min-height: 100vh;
+    min-height: 110vh;
     position: relative;
     overflow: hidden;
 }
@@ -243,9 +243,11 @@ LANDING PAGE
     border: none;
     background-color: #242424;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
     right: 40px;
+    z-index: 100;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
 }
 
 .scroll {
@@ -682,15 +684,15 @@ SHAPES
     left: 80vw;
 }
 .shape--6 {
-    top: 80vh;
+    top: 70vh;
     left: 5vw;
 }
 .shape--7 {
-    top: 80vh;
+    top: 70vh;
     left: 50vw;
 }
 .shape--8 {
-    top: 80vh;
+    top: 70vh;
     left: 80vw;
 }
 
@@ -726,3 +728,37 @@ Small devices and tablets
 Small Phones
 
 */
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 52px;
+    }
+
+    .header__para {
+        font-size: 18px;
+    }
+
+    .nav__link:first-child {
+        display: none;
+        
+    }
+
+    .project__description--para {
+        display: none;
+    }
+
+    .project__description {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .project__description--sub-title {
+        margin-bottom: 80px;
+    }
+
+    .modal__half {
+        padding: 40px;
+    }
+}
