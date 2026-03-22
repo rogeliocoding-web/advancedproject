@@ -68,7 +68,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #f06449;
+    border-color: blue;
 }
 
 
@@ -108,8 +108,8 @@ input:focus, textarea:focus {
     line-height: 1;
 }
 
-.orange {
-    color: #f06449 !important;
+.blue {
+    color: blue !important;
     
 }
 
