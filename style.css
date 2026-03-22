@@ -647,28 +647,11 @@ footer {
 
 SHAPES
 
-shapes on first row
-height = 25vh;
-
-shapes on second row
-height = 70vh;
-
-shapes on third row
-height = 95vh;
-
-shapes on the first colum
-width = 5vw;
-
-shapes on the second colum
-width = 50vw;
-
-shapes on the third colum
-width = 80vw;
 
 */
 
 .shape {
-    position: fixed;
+    position: absolute;
 }
 
 .shape--0 {
